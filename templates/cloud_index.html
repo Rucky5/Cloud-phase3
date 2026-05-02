@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cloud Speech to Text — AssemblyAI</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <main class="page">
+
+    <section class="hero">
+      <p class="eyebrow">Phase 3 Demo</p>
+      <h1>Cloud Speech to Text</h1>
+      <p class="subtitle">
+        Upload an audio file and convert it into text using AssemblyAI cloud-based speech recognition.
+      </p>
+    </section>
+
+    <section class="card controls">
+      <div class="actions">
+        <label class="upload">
+          <input id="fileInput" type="file" accept="audio/*">
+          <span>Choose Audio File</span>
+        </label>
+      </div>
+      <div class="status-row">
+        <span id="status">Ready to transcribe.</span>
+      </div>
+    </section>
+
+    <section class="card result-card">
+      <div class="result-header">
+        <h2>Transcription</h2>
+        <button id="copyButton" class="secondary">Copy Text</button>
+      </div>
+      <textarea id="result" placeholder="Your transcription will appear here..." readonly></textarea>
+
+      <div class="metrics">
+        <h3>Performance Metrics</h3>
+
+        <div class="metric-row">
+          <span>Inference time (s)</span>
+          <span id="inferenceTime">--</span>
+        </div>
+
+        <div class="metric-row">
+          <span>Audio Duration</span>
+          <span id="audioDuration">--</span>
+        </div>
+
+        <div class="metric-row">
+          <span>Network Latency (ms)</span>
+          <span id="networkLatency">--</span>
+        </div>
+
+        <div class="metric-row">
+          <span>Average CPU usage (%)</span>
+          <span id="avgCpu">--</span>
+        </div>
+
+        <div class="metric-row">
+          <span>Estimated Cost (USD)</span>
+          <span id="costUsd">--</span>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+  <script src="/static/cloud_app.js"></script>
+</body>
+</html>
