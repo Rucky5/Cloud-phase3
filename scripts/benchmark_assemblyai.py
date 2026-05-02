@@ -20,7 +20,7 @@ AUDIO_DURATIONS_MIN = {
     "long":   60.09
 }
 
-COST_PER_HOUR = 0.37
+COST_PER_HOUR = 0.15
 RESULTS_DIR   = "benchmark_results"
 os.makedirs(RESULTS_DIR, exist_ok=True)
 
